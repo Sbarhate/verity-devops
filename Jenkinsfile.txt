@@ -11,7 +11,11 @@ pipeline {
             }
         }
 		//Code ends for stage Clean
-		
+		stage('PMD') {
+            steps {
+                sh 'mvn site'
+            }
+        }
 		
 		// *****ALL CODE TO BE ADDED ABOVE THIS COMMENT*****
     }
